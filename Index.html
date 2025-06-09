@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grand Tirage – iPhone 13</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>🎉 Grand Tirage – Gagnez un iPhone 13 !</h1>
+    <p>Ticket : 500 HTG • Max 300 tickets</p>
+    <p>Tickets restants : <span id="remaining">300</span></p>
+    <button id="buy-btn">Acheter un ticket</button>
+  </main>
+
+  <section id="form-container" class="hidden">
+    <h2>Entrez vos informations</h2>
+    <form id="entry-form">
+      <label>
+        Nom complet<br />
+        <input type="text" name="name" required />
+      </label><br />
+      <label>
+        Téléphone<br />
+        <input type="text" name="phone" required />
+      </label><br />
+      <button type="button" id="moncash-btn">Payer avec MonCash</button><br /><br />
+      <label>
+        ID de transaction MonCash<br />
+        <input type="text" name="txid" required />
+      </label><br />
+      <button type="submit">Confirmer la participation</button>
+    </form>
+    <p id="message"></p>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="sheet-integration.js"></script>
+</body>
+</html>
